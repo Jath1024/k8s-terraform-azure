@@ -52,6 +52,7 @@ Create the Terraform configuration file that declares the Azure provider.
     ```
 
 1. Enter insert mode by selecting the I key.
+MD_EXTENSIONS = ['codehilite(css_class=highlight, guess_lang=False)', 'extra']
 
 1. Paste the following code into the editor:
 
