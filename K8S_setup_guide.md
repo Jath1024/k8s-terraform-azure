@@ -1,3 +1,5 @@
+MD_EXTENSIONS = ['codehilite(css_class=highlight, guess_lang=False)', 'extra']
+
 # Create a Kubernetes cluster with Azure Kubernetes Service and Terraform
 [Azure Kubernetes Service (AKS)](/azure/aks/) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise. It also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
 
