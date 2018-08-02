@@ -8,7 +8,7 @@ In this guide, you will learn how to:
 - Debug code running in your cluster.
 
 > [!Note]
-> **If you get stuck** at any time, see the [Troubleshooting](troubleshooting.md) section, or post a comment on this page. You can also try the more detailed [tutorial](get-started-nodejs.md).
+> **If you get stuck** at any time, see the [Troubleshooting](https://docs.microsoft.com/en-us/azure/dev-spaces/troubleshooting) section, or post a comment on this page. You can also try the more detailed [tutorial](https://docs.microsoft.com/en-us/azure/dev-spaces/get-started-nodejs).
 
 ## Prerequisites
 
