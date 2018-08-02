@@ -8,7 +8,7 @@ In this guide, you will learn how to:
 - Debug code running in your cluster.
 
 > [!Note]
-> **If you get stuck** at any time, see the [Troubleshooting](troubleshooting.md) section, or post a comment on this page. You can also try the more detailed [tutorial](get-started-nodejs.md).
+> **If you get stuck** at any time, see the [Troubleshooting](https://docs.microsoft.com/en-us/azure/dev-spaces/troubleshooting) section, or post a comment on this page. You can also try the more detailed [tutorial](https://docs.microsoft.com/en-us/azure/dev-spaces/get-started-nodejs).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ In this guide, you will learn how to:
 
 ## Set up Azure Dev Spaces
 
-1. Install the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.0.38 or higher).
+1. Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.0.38 or higher).
 1. Set up Dev Spaces on your AKS cluster: `az aks use-dev-spaces -g MyResourceGroup -n MyAKS`
 1. Download the [Azure Dev Spaces extension](https://aka.ms/get-azds-code) for VS Code. Click Install once on the extension's Marketplace page, and again in VS Code.
 
