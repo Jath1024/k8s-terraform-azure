@@ -17,10 +17,14 @@ variable cluster_name {
     default = "k8stest"
 }
 
+variable kube_version {
+  default = "1.10.6"
+}
+
 variable resource_group_name {
     default = "azure-k8stest"
 }
 
 variable location {
-    default = "North Europe"
+    default = "Central US"
 }
