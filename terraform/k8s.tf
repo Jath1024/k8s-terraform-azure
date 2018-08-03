@@ -2,6 +2,32 @@ resource "azurerm_resource_group" "k8s" {
     name     = "${var.resource_group_name}"
     location = "${var.location}"
 }
+#an attempt to keep the aci container group name (and dns label) somewhat unique
+resource "random_integer" "random_int" {
+  min = 100
+  max = 999
+}
+
+resource azurerm_network_security_group "aks_advanced_network" {
+  name                = "akc-${random_integer.random_int.result}-nsg"
+  location            = "${var.resource_group_location}"
+  resource_group_name = "${azurerm_resource_group.akc-rg.name}"
+}
+
+resource "azurerm_virtual_network" "aks_advanced_network" {
+  name                = "akc-${random_integer.random_int.result}-vnet"
+  location            = "${var.resource_group_location}"
+  resource_group_name = "${azurerm_resource_group.akc-rg.name}"
+  address_space       = ["10.1.0.0/16"]
+}
+
+resource "azurerm_subnet" "aks_subnet" {
+  name                      = "akc-${random_integer.random_int.result}-subnet"
+  resource_group_name       = "${azurerm_resource_group.akc-rg.name}"
+  network_security_group_id = "${azurerm_network_security_group.aks_advanced_network.id}"
+  address_prefix            = "10.1.0.0/24"
+  virtual_network_name      = "${azurerm_virtual_network.aks_advanced_network.name}"
+}
 
 resource "azurerm_kubernetes_cluster" "k8s" {
     name                = "${var.cluster_name}"
@@ -24,7 +50,8 @@ resource "azurerm_kubernetes_cluster" "k8s" {
         vm_size         = "Standard_D3_V2"
         os_type         = "Linux"
         os_disk_size_gb = 30
-        #vnet_subnet_id  = ""
+        # Required for advanced networking
+        vnet_subnet_id = "${azurerm_subnet.aks_subnet.id}"
     }
 
     network_profile {
@@ -32,7 +59,6 @@ resource "azurerm_kubernetes_cluster" "k8s" {
         service_cidr        = "10.0.0.0/16"
         dns_service_ip      = "10.0.0.10"
         docker_bridge_cidr  = "172.17.0.1/16"
-        #pod_cidr            = ""
     }
 
     service_principal {
