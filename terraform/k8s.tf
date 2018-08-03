@@ -10,13 +10,13 @@ resource "random_integer" "random_int" {
 
 resource azurerm_network_security_group "aks_advanced_network" {
   name                = "akc-${random_integer.random_int.result}-nsg"
-  location            = "${var.resource_group_location}"
+  location            = "${var.location}"
   resource_group_name = "${azurerm_resource_group.akc-rg.name}"
 }
 
 resource "azurerm_virtual_network" "aks_advanced_network" {
   name                = "akc-${random_integer.random_int.result}-vnet"
-  location            = "${var.resource_group_location}"
+  location            = "${var.location}"
   resource_group_name = "${azurerm_resource_group.akc-rg.name}"
   address_space       = ["10.1.0.0/16"]
 }
