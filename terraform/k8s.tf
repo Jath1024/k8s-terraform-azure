@@ -47,11 +47,11 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     agent_pool_profile {
         name            = "default"
         count           = "${var.agent_count}"
-        vm_size         = "Standard_D3_V2"
+        vm_size         = "Standard_D2_V3"
         os_type         = "Linux"
         os_disk_size_gb = 30
         # Required for advanced networking
-        vnet_subnet_id = "${azurerm_subnet.aks_subnet.id}"
+        #net_subnet_id = "${azurerm_subnet.aks_subnet.id}"
     }
 
     # network_profile {
