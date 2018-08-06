@@ -27,7 +27,7 @@ resource "random_integer" "random_int" {
 #   network_security_group_id = "${azurerm_network_security_group.aks_advanced_network.id}"
 #   address_prefix            = "10.1.0.0/24"
 #   virtual_network_name      = "${azurerm_virtual_network.aks_advanced_network.name}"
-}
+#}
 
 resource "azurerm_kubernetes_cluster" "k8s" {
     name                = "${var.cluster_name}"
