@@ -6,11 +6,17 @@ In this walkthrough you will use Terraform through the Azure Bash Cloud Shell to
 * VS Code
 
 ## Azure Container Service (AKS)
+
+# STEP 1: https://github.com/Jath1024/k8s-terraform-azure/blob/master/K8S_setup_guide.md
+
 Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. In addition, the service is free, you only pay for the agent nodes within your clusters, not for the masters.
 
 [Source AKS Overview](https://docs.microsoft.com/en-gb/azure/aks/intro-kubernetes)
 
 ## Dev Spaces
+
+# STEP 2: https://github.com/Jath1024/k8s-terraform-azure/blob/master/DevSpaces_guide.md
+
 Azure Dev Spaces provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
 Azure Dev Spaces helps development teams be more productive on Kubernetes in the following ways:
