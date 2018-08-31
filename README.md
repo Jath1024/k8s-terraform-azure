@@ -7,7 +7,7 @@ In this walkthrough you will use Terraform through the Azure Bash Cloud Shell to
 
 ## Azure Container Service (AKS)
 
-### [STEP 1:] (./K8S_setup_guide.md)
+### [STEP 1:](./K8S_setup_guide.md)
 
 Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. In addition, the service is free, you only pay for the agent nodes within your clusters, not for the masters.
 
@@ -15,7 +15,7 @@ Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cl
 
 ## Dev Spaces
 
-### [STEP 2:] (./DevSpaces_guide.md)
+### [STEP 2:](./DevSpaces_guide.md)
 
 Azure Dev Spaces provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
