@@ -30,7 +30,7 @@ Share a managed Kubernetes cluster with your team and collaboratively work toget
 
 ## AKS Health
 
-### [STEP 3: AKS Setup](https://docs.microsoft.com/en-us/azure/monitoring/monitoring-container-health)
+### [STEP 3: Container Health Setup](https://docs.microsoft.com/en-us/azure/monitoring/monitoring-container-health)
 
 Container health gives you performance monitoring ability by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. After you enable container health, these metrics are automatically collected for you through a containerized version of the Log Analytics agent for Linux and stored in your Log Analytics workspace. The included pre-defined views display the residing container workloads and what affects the performance health of the Kubernetes cluster so that you can:
 
