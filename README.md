@@ -7,7 +7,7 @@ In this walkthrough you will use Terraform through the Azure Bash Cloud Shell to
 
 ## Azure Container Service (AKS)
 
-# STEP 1: https://github.com/Jath1024/k8s-terraform-azure/blob/master/K8S_setup_guide.md
+### STEP 1: https://github.com/Jath1024/k8s-terraform-azure/blob/master/K8S_setup_guide.md
 
 Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. In addition, the service is free, you only pay for the agent nodes within your clusters, not for the masters.
 
@@ -15,7 +15,7 @@ Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cl
 
 ## Dev Spaces
 
-# STEP 2: https://github.com/Jath1024/k8s-terraform-azure/blob/master/DevSpaces_guide.md
+### STEP 2: https://github.com/Jath1024/k8s-terraform-azure/blob/master/DevSpaces_guide.md
 
 Azure Dev Spaces provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
@@ -29,6 +29,9 @@ Share a managed Kubernetes cluster with your team and collaboratively work toget
 [Source Dev Spaces Overview](https://docs.microsoft.com/en-us/azure/dev-spaces/azure-dev-spaces)
 
 ## AKS Health
+
+### STEP 3: 
+
 Container health gives you performance monitoring ability by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. After you enable container health, these metrics are automatically collected for you through a containerized version of the Log Analytics agent for Linux and stored in your Log Analytics workspace. The included pre-defined views display the residing container workloads and what affects the performance health of the Kubernetes cluster so that you can:
 
 * Identify containers that are running on the node and their average processor and memory utilization. This knowledge can help you identify resource bottlenecks.
